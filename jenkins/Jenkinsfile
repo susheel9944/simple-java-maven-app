@@ -1,5 +1,6 @@
+
 pipeline {
-    agent any
+    agent { label 'ubuntu' }
 
     tools {
         maven 'maven-3.9.12'
@@ -8,8 +9,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'java -version'
-                sh 'mvn -version'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
