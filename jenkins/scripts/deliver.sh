@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo 'The following Maven command installs your Maven-built Java application---checking the webhook'
-echo 'into the local Maven repository, which will ultimately be stored in this is first webhook'
+echo 'into the local Maven repository, which will ultimately be stored in this is first webhook second time'
 echo 'Jenkins''s local Maven repository (and the "maven-repository" Docker data'
 echo 'volume).'
 set -x
